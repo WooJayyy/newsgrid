@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visibility & Order</title>
+</head>
+<style>
+  /* Target class/id overwrites target h1 */
+  .hello {
+    color: red;
+  }
+
+   h1 {
+   /* display: none; */
+   /* visibility still takes the space */
+   /* visibility: hidden; */
+   /* important is priority */
+   color: blue !important;
+   margin-top: -30px;
+   margin-left: -30px;
+   }
+</style>
+<body>
+  <h1 class="hello">Hellow World</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident natus commodi voluptas molestias expedita beatae, dolorum recusandae ipsum voluptate.</p>
+</body>
+</html>

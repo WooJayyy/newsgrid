@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadows</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .box {
+      padding: 1rem;
+      margin: 1rem;
+      background: coral;
+      color: #fff;
+    }
+    
+    /* offset-x | offset-y | color */
+    .box-1 {
+      box-shadow: -10px -10px teal;
+    }
+
+    /* offset-x | offset-y | blur-radius | color */
+    .box-2 {
+      box-shadow: 5px 5px 10px blueviolet;
+    }
+
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    .box-3 {
+      box-shadow: 20px 20px 20px 10px rgb(0, 0, 0, 0.2);
+    }
+
+    /* inset | offset-x | offset-y | color | multiple*/
+    .box-4 {
+      box-shadow: inset 10px 10px sienna, 10px 10px sandybrown;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, animi.</p>
+    </div>
+    <div class="box box-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, animi.</p>
+    </div>
+    <div class="box box-3">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, animi.</p>
+    </div>
+    <div class="box box-4">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, animi.</p>
+    </div>
+  </div>
+</body>
+</html>
